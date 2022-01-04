@@ -20,7 +20,7 @@ const getrawgio = async(name, image, aliancas) => {//função para pegar os dado
 }
 const exibeDados = async() => {//função para exibir os dados
     for(let i = 1; i < 33; i++){//loop para pegar os dados da api
-        const url = `https://superheroapi.com/api/1552656308273724/${i}`;//url da api
+        const url = `https://superheroapi.com/api.php/1552656308273724/${i}`;//url da api
         const getApi = await fetch(url);//fetch para pegar os dados da api
         const json = await getApi.json();//json para pegar os dados da api
         var name = await json.name;//nome do heroi
@@ -32,7 +32,7 @@ const exibeDados = async() => {//função para exibir os dados
 exibeDados();
 const buscaApi = async() => {//função para buscar os dados da api
     const inputName = document.getElementById('txtbuscar').value;//pega o valor do input
-    const url = `https://superheroapi.com/api/1552656308273724/search/${inputName}`;//url da api
+    const url = `https://superheroapi.com/api.php/1552656308273724/search/${inputName}`;//url da api
     const getApi = await fetch(url);//fetch para pegar os dados da api
     const json = await getApi.json();//json para pegar os dados da api
     const dados = await json.results[0];//dados da api
