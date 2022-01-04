@@ -149,3 +149,6 @@ progress[value]::-webkit-progress-value{
         font-size: 50px;
     }
 }
+.cor{
+    color: #1e74a0;
+}
