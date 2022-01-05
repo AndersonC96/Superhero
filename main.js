@@ -43,32 +43,32 @@ function createHeroCard(hero){//Cria a carta do herói
             <b class="cor">Ocupação: </b>${hero.work.occupation}<br>
             <b class="cor">Sede: </b>${hero.work.base}<br>
             <h3 class="name">Conexões</h3>
-            <b class="cor">Grupos: </b>${Object.values(hero.connections)[0]}<br>
+            <b class="cor">Grupos: </b>${Object.values(hero.connections)[5]}<br>
             <b class="cor">Parentes: </b>${hero.connections.relatives}<br>
             <h3 class="name">Estatisticas</h3>
             <ul>
                 <li>
-                    ${capitalizeFirstletter(Object.keys(hero.powerstats)[0])}
+                    Inteligência (${Object.values(hero.powerstats)[0]} / 100)
                     <progress max="100" value="${Object.values(hero.powerstats)[0]}"></progress>
                 </li>
                 <li>
-                    ${capitalizeFirstletter(Object.keys(hero.powerstats)[1])}
+                    Força (${Object.values(hero.powerstats)[1]} / 100)
                     <progress max="100" value="${Object.values(hero.powerstats)[1]}"></progress>
                 </li>
                 <li>
-                    ${capitalizeFirstletter(Object.keys(hero.powerstats)[2])}
+                    Velocidade (${Object.values(hero.powerstats)[2]} / 100)
                     <progress max="100" value="${Object.values(hero.powerstats)[2]}"></progress>
                 </li>
                 <li>
-                    ${capitalizeFirstletter(Object.keys(hero.powerstats)[3])}
+                    Durabilidade (${Object.values(hero.powerstats)[3]} / 100)
                     <progress max="100" value="${Object.values(hero.powerstats)[3]}"></progress>
                 </li>
                 <li>
-                    ${capitalizeFirstletter(Object.keys(hero.powerstats)[4])}
+                    Poder (${Object.values(hero.powerstats)[4]} / 100)
                     <progress max="100" value="${Object.values(hero.powerstats)[4]}"></progress>
                 </li>
                 <li>
-                    ${capitalizeFirstletter(Object.keys(hero.powerstats)[5])}
+                    Combate (${Object.values(hero.powerstats)[5]} / 100)
                     <progress max="100" value="${Object.values(hero.powerstats)[5]}"></progress>
                 </li>
             </ul>
